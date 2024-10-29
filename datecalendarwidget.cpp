@@ -29,10 +29,8 @@ void DateCalendarWidget::setupUI()
             this, &DateCalendarWidget::updateDateLabel);
 }
 
-
 void DateCalendarWidget::updateDateLabel()
 {
     QDate currentDate = calendarWidget->selectedDate();
     dateLabel->setText(currentDate.toString("dddd, d MMMM, yyyy"));
 }
-
